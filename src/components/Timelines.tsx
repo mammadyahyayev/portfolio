@@ -10,7 +10,7 @@ type TimeLineProps = {
 const Timelines = ({title, dataList}: TimeLineProps) => {
     return (
         <div className="">
-            <Title title={title}/>
+            <Title>{title}</Title>
             {dataList.map(data => (
                 <TimelineItem date={data.date}
                               title={data.title}

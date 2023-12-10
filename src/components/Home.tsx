@@ -2,6 +2,7 @@ import NavBar from "./NavBar.tsx";
 import Projects from "./Projects.tsx";
 import Timelines from "./Timelines.tsx";
 import {employmentHistoryData} from "../data/timelineData.ts";
+import Contact from "./Contact.tsx";
 
 function Home() {
     return (
@@ -33,6 +34,11 @@ function Home() {
                 {/*<div className="w-1/2">
                     <Timelines title="Education" dataList={educationHistoryData}/>
                 </div>*/}
+            </div>
+            <div className="flex justify-center items-start mt-1">
+                <div className="w-full md:w-1/2">
+                    <Contact/>
+                </div>
             </div>
         </>
     )
