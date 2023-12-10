@@ -2,7 +2,7 @@ import {ProjectItem} from "../data/projectsData.ts";
 
 function ProjectItem({name, imgUrl, tags, link}: ProjectItem) {
     return (
-        <a className="border-2 border-stone-900 rounded-md overflow-hidden" href={link}>
+        <a className="border-2 border-stone-900 rounded-md overflow-hidden dark:border-white" href={link}>
             <div className="inline">
                 <img className="w-full h-36 md:h-48 object-cover cursor-pointer"
                      src={imgUrl}

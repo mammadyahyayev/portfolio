@@ -1,5 +1,7 @@
 import NavBar from "./NavBar.tsx";
 import Projects from "./Projects.tsx";
+import Timelines from "./Timelines.tsx";
+import {employmentHistoryData} from "../data/timelineData.ts";
 
 function Home() {
     return (
@@ -23,6 +25,14 @@ function Home() {
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
                     <Projects/>
                 </div>
+            </div>
+            <div className="flex justify-center items-start mt-10 p-20 gap-12">
+                <div className="w-full md:w-1/2">
+                    <Timelines title="Employment History" dataList={employmentHistoryData}/>
+                </div>
+                {/*<div className="w-1/2">
+                    <Timelines title="Education" dataList={educationHistoryData}/>
+                </div>*/}
             </div>
         </>
     )
