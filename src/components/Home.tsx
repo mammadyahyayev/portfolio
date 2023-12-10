@@ -3,6 +3,7 @@ import Projects from "./Projects.tsx";
 import Timelines from "./Timelines.tsx";
 import {employmentHistoryData} from "../data/timelineData.ts";
 import Contact from "./Contact.tsx";
+import Footer from "./Footer.tsx";
 
 function Home() {
     return (
@@ -40,6 +41,7 @@ function Home() {
                     <Contact/>
                 </div>
             </div>
+            <Footer/>
         </>
     )
 }
