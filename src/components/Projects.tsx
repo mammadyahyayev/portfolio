@@ -2,8 +2,8 @@ import {projectsData} from "../data/projectsData.ts";
 import ProjectItem from "./ProjectItem.tsx";
 
 const Projects = () => {
-    return projectsData.map(project => (
-        <ProjectItem name={project.name} imgUrl={project.imgUrl} tags={project.tags} link={project.link}/>
+    return projectsData.slice(0, 3).map(project => (
+        <ProjectItem name={project.name} tags={project.tags} link={project.link}/>
     ))
 };
 
