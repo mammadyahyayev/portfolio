@@ -3,17 +3,12 @@ import Home from "./components/Home.tsx";
 
 function App() {
     return (
-        <>
-           <Home />
-        </>
+        <div className="relative">
+            <div className="pointer-events-none fixed inset-0 z-30 transition duration-300 lg:absolute"
+                 style={{backgroundColor: "radial-gradient(600px at 704px 571px, rgba(29, 78, 216, 0.15), transparent 80%)"}}/>
+            <Home/>
+        </div>
     )
 }
 
 export default App
-
-
-/*
-        1. If I define :root in every css file it will be applied globally or only the file where it is imported?
-        2. How to update immediately tailwind css, when I change something it will update very lately,
-        is there any other way to work with tailwind css
- */
