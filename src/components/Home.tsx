@@ -4,6 +4,7 @@ import Timelines from "./Timelines.tsx";
 import {employmentHistoryData} from "../data/timelineData.ts";
 import Contact from "./Contact.tsx";
 import Socials from "./socials/Socials.tsx";
+import InlineTextHighlight from "./InlineTextHighlight.tsx";
 
 function Home() {
     return (
@@ -31,31 +32,39 @@ function Home() {
                             <Socials/>
                         </header>
                         <main className="pt-24 lg:w-1/2 lg:py-24">
-                            <p className="text-sm max-w-xl mb-6 font-bold min-[400]:px-4">
-                                As a software engineer and system architecture enthusiast, I am passionate about
-                                designing
-                                and implementing efficient, scalable, and secure software systems. With a solid
-                                foundation
-                                in software engineering principles and experience working with a variety of programming
-                                languages and development frameworks.
-
-                                My expertise extends beyond simply writing code. I have a deep understanding of the
-                                entire
-                                software development lifecycle, from requirements gathering and design to testing and
-                                deployment.
-
-                                I am skilled at collaborating with cross-functional teams to ensure that all
-                                stakeholders'
-                                needs are met and that projects are completed on time and within budget.
-
-                                In addition to my technical skills, I am a strong communicator and problem-solver. I
-                                enjoy
-                                working with others to understand their needs and requirements and am able to distill
-                                complex technical concepts into clear and concise language.
-
-                                I am always looking for new challenges and opportunities to learn and grow as a software
-                                engineer and system architect.
-                            </p>
+                            <section id="about" className="mb-16 scroll-mt-16 md:mb-24 lg:mb-36 lg:scroll-mt-24"
+                                     aria-label="About me">
+                                <p className="mb-4">
+                                    As a software engineer and <InlineTextHighlight> system architecture
+                                    enthusiast</InlineTextHighlight>, I am passionate about
+                                    designing and implementing efficient, scalable, and secure software systems. With a
+                                    solid foundation in software engineering principles and experience working with a
+                                    variety of programming languages and development frameworks.
+                                </p>
+                                <p className="mb-4">
+                                    My expertise extends beyond simply writing code. I have a deep understanding of the
+                                    entire <InlineTextHighlight> software development lifecycle</InlineTextHighlight>,
+                                    from requirements gathering and design to
+                                    testing and deployment.
+                                </p>
+                                <p className="mb-4">
+                                    I am skilled at collaborating with cross-functional teams to ensure that all
+                                    stakeholders' needs are met and that projects are completed on time and within
+                                    budget.
+                                </p>
+                                <p className="mb-4">
+                                    In addition to my technical skills, I am a
+                                    <InlineTextHighlight> strong communicator</InlineTextHighlight> and
+                                    <InlineTextHighlight> problem-solver</InlineTextHighlight>.
+                                    I enjoy working with others to understand their needs and
+                                    requirements and am able to
+                                    distill complex technical concepts into clear and concise language.
+                                </p>
+                                <p>
+                                    I am always looking for new challenges and opportunities to learn and grow as a
+                                    software engineer and system architect.
+                                </p>
+                            </section>
                             <div className="flex flex-col md:flex-row items-center justify-center">
                                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
                                     <Projects/>
