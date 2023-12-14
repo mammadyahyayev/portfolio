@@ -1,45 +1,58 @@
-export interface ITimeline {
+export interface Experience {
+    id: string;
     date: string;
-    title: string;
+    company: string;
+    link: string,
+    role: string;
     duration: string;
     description?: string;
+    tags: string[]
 }
 
-type EmploymentHistory = ITimeline;
-type EducationHistory = ITimeline;
+type EmploymentHistory = Experience;
+// type EducationHistory = Experience;
 
 export const employmentHistoryData: EmploymentHistory[] = [
     {
+        id: 'smartscoring',
         date: "Apr 2022 - Present",
-        title: "Software Engineer",
+        role: "Software Engineer",
+        company: "SmartScoring",
+        link: "https://smartscoring.com/",
         duration: "1 year 9 months",
         description: "Develop and maintain desktop based applications.\n" +
             "Decreased deployment time by 95% through implementation of easy-to-understand scripting\n" +
             "Upgrade and maintain existing systems to ensure that they meet evolving business needs.\n" +
             "Write and implement efficient code to ensure that code is scalable, maintainable, and secure.\n" +
-            "Continuously improve software development processes by identifying areas for improvement."
+            "Continuously improve software development processes by identifying areas for improvement.",
+        tags: ['C#', '.NET', 'WPF', 'Java', 'gRPC', 'TypeScript', 'Angular']
     },
     {
+        id: 'logix',
         date: "Jan 2022 - Apr 2022",
-        title: "SQL Developer",
+        role: "SQL Developer",
+        company: "Logix",
+        link: "http://logix.az/",
         duration: "4 months",
         description: "Design, develop and maintain SQL scripts, stored procedures, and functions.\n" +
             "Monitor and optimize database performance, identifying and addressing potential bottlenecks or issues.\n" +
-            "Manage database security, ensuring that data is protected and only accessible to authorized users."
+            "Manage database security, ensuring that data is protected and only accessible to authorized users.",
+        tags: ['RDBMS', 'Sql Server']
     }
 ]
 
-export const educationHistoryData: EducationHistory[] = [
-    {
-        date: "Sep 2022 - Jul 2024",
-        title: "Azerbaijan State University of Oil and Industry",
-        duration: "2 years",
-        description: "Master, Artificial Intelligence"
-    },
-    {
-        date: "Sep 2018 - Jul 2022",
-        title: "Azerbaijan State University of Oil and Industry",
-        duration: "4 years",
-        description: "Bachelor, Information Technology"
-    }
-]
+//
+// export const educationHistoryData: EducationHistory[] = [
+//     {
+//         date: "Sep 2022 - Jul 2024",
+//         title: "Azerbaijan State University of Oil and Industry",
+//         duration: "2 years",
+//         description: "Master, Artificial Intelligence"
+//     },
+//     {
+//         date: "Sep 2018 - Jul 2022",
+//         title: "Azerbaijan State University of Oil and Industry",
+//         duration: "4 years",
+//         description: "Bachelor, Information Technology"
+//     }
+// ]

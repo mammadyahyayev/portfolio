@@ -1,6 +1,6 @@
 import NavBar from "./navbar/NavBar.tsx";
 import Projects from "./Projects.tsx";
-import Timelines from "./Timelines.tsx";
+import Experiences from "./Experiences.tsx";
 import {employmentHistoryData} from "../data/timelineData.ts";
 import Contact from "./Contact.tsx";
 import Socials from "./socials/Socials.tsx";
@@ -65,6 +65,13 @@ function Home() {
                                     software engineer and system architect.
                                 </p>
                             </section>
+
+                            <section id="experience" className="mb-16 scroll-mt-16 md:mb-24 lg:mb-36 lg:scroll-mt-24">
+                                <ol className="group/list">
+                                    <Experiences title="Employment History" experiences={employmentHistoryData}/>
+                                </ol>
+                            </section>
+
                             <div className="flex flex-col md:flex-row items-center justify-center">
                                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
                                     <Projects/>
@@ -72,7 +79,7 @@ function Home() {
                             </div>
                             <div className="flex justify-center items-start mt-10 p-20 gap-12">
                                 <div className="w-full md:w-1/2">
-                                    <Timelines title="Employment History" dataList={employmentHistoryData}/>
+                                    <Experiences title="Employment History" experiences={employmentHistoryData}/>
                                 </div>
                             </div>
                             <div className="flex justify-center items-start mt-1">
