@@ -5,6 +5,7 @@ import {employmentHistoryData} from "../data/timelineData.ts";
 import Contact from "./Contact.tsx";
 import Socials from "./socials/Socials.tsx";
 import InlineTextHighlight from "./InlineTextHighlight.tsx";
+import RightArrowIcon from "./RightArrowIcon.tsx";
 
 function Home() {
     return (
@@ -68,8 +69,21 @@ function Home() {
 
                             <section id="experience" className="mb-16 scroll-mt-16 md:mb-24 lg:mb-36 lg:scroll-mt-24">
                                 <ol className="group/list">
-                                    <Experiences title="Employment History" experiences={employmentHistoryData}/>
+                                    <Experiences experiences={employmentHistoryData}/>
                                 </ol>
+                                <div className="mt-12"><a
+                                    className="inline-flex items-center font-medium leading-tight text-slate-200 group"
+                                    aria-label="View Full Résumé" href="/resume.pdf">
+                                    <span>
+                                        <span
+                                            className="border-b border-transparent pb-px transition group-hover:border-teal-300 motion-reduce:transition-none">View Full </span><span
+                                        className="whitespace-nowrap"><span
+                                        className="border-b border-transparent pb-px transition group-hover:border-teal-300 motion-reduce:transition-none">Resume</span>
+                                            <RightArrowIcon/>
+                                    </span>
+                                </span>
+                                </a>
+                                </div>
                             </section>
 
                             <div className="flex flex-col md:flex-row items-center justify-center">
@@ -77,11 +91,7 @@ function Home() {
                                     <Projects/>
                                 </div>
                             </div>
-                            <div className="flex justify-center items-start mt-10 p-20 gap-12">
-                                <div className="w-full md:w-1/2">
-                                    <Experiences title="Employment History" experiences={employmentHistoryData}/>
-                                </div>
-                            </div>
+
                             <div className="flex justify-center items-start mt-1">
                                 <div className="w-full md:w-10/12">
                                     <Contact/>
