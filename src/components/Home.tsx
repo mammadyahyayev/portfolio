@@ -87,7 +87,8 @@ function Home() {
                                 </div>
                             </section>
 
-                            <section id="projects" className="mb-16 scroll-mt-16 md:mb-24 lg:mb-36 lg:scroll-mt-24">
+                            <section id="projects" className="mb-16 scroll-mt-16 md:mb-24 lg:mb-36 lg:scroll-mt-24"
+                                     aria-label="Projects">
                                 <ul className="group/list">
                                     <Projects/>
                                 </ul>
@@ -116,11 +117,10 @@ function Home() {
                                 </div>
                             </section>
 
-                            <div className="flex justify-center items-start mt-1">
-                                <div className="w-full md:w-10/12">
-                                    <Contact/>
-                                </div>
-                            </div>
+                            <section id="contact" className="mb-16 scroll-mt-16 md:mb-24 lg:mb-36 lg:scroll-mt-24"
+                                     aria-label="Contact Me">
+                                <Contact/>
+                            </section>
                         </main>
                     </div>
                 </div>

@@ -1,15 +1,12 @@
-import Title from "./Title.tsx";
-
 const Contact = () => {
     return (
-        <div className="flex flex-col mb-10 mx-auto">
+        <div>
             <div className="flex justify-center items-center">
                 <form
                     action="https://getform.io/f/8ec6a29e-d904-4aab-b176-6b50e09d9411"
                     method="POST"
-                    className="flex flex-col w-full md:w-7/12"
+                    className="flex flex-col w-full"
                 >
-                    <Title> Contact me </Title>
                     <input
                         type="text"
                         name="name"
@@ -30,7 +27,8 @@ const Contact = () => {
                     />
                     <button
                         type="button"
-                        className="text-center inline-block px-8 py-3 w-max text-base font-medium rounded-md text-white bg-gradient-to-r from-yellow-500 to-pink-500 drop-shadow-md hover:stroke-white"
+                        className="text-center inline-block px-8 py-3 w-max font-medium rounded-md drop-shadow-md
+                        bg-teal-400/50 text-xs text-white hover:stroke-white hover:bg-teal-800"
                     >
                         Work With Me
                     </button>
