@@ -3,7 +3,14 @@ import ProjectItem from "./ProjectItem.tsx";
 
 const Projects = () => {
     return projectsData.slice(0, 3).map(project => (
-        <ProjectItem name={project.name} tags={project.tags} link={project.link}/>
+        <ProjectItem
+            key={project.name}
+            name={project.name}
+            description={project.description}
+            imageSrc={project.imageSrc}
+            technologies={project.technologies}
+            link={project.link}
+        />
     ))
 };
 

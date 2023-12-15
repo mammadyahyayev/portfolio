@@ -86,11 +86,21 @@ function Home() {
                                 </div>
                             </section>
 
-                            <div className="flex flex-col md:flex-row items-center justify-center">
-                                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+                            <section id="#projects" className="mb-16 scroll-mt-16 md:mb-24 lg:mb-36 lg:scroll-mt-24">
+                                <ul className="group/list">
                                     <Projects/>
+                                </ul>
+                                <div className="mt-12">
+                                    <a className="inline-flex items-center leading-tight font-semibold text-slate-200 group cursor-pointer">
+                                        <span
+                                            className="border-b border-transparent pb-px transition group-hover:border-teal-300 motion-reduce:transition-none">
+                                            View Full Project Archive
+                                        </span>
+                                        <RightArrowIcon/>
+                                    </a>
                                 </div>
-                            </div>
+                            </section>
+
 
                             <div className="flex justify-center items-start mt-1">
                                 <div className="w-full md:w-10/12">
