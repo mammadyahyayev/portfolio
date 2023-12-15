@@ -1,11 +1,12 @@
 import NavBar from "./navbar/NavBar.tsx";
 import Projects from "./Projects.tsx";
 import Experiences from "./Experiences.tsx";
-import {employmentHistoryData} from "../data/timelineData.ts";
+import {employmentHistoryData} from "../data/experiencesData.ts";
 import Contact from "./Contact.tsx";
 import Socials from "./socials/Socials.tsx";
 import InlineTextHighlight from "./InlineTextHighlight.tsx";
 import RightArrowIcon from "./RightArrowIcon.tsx";
+import Blogs from "./Blogs.tsx";
 
 function Home() {
     return (
@@ -86,7 +87,7 @@ function Home() {
                                 </div>
                             </section>
 
-                            <section id="#projects" className="mb-16 scroll-mt-16 md:mb-24 lg:mb-36 lg:scroll-mt-24">
+                            <section id="projects" className="mb-16 scroll-mt-16 md:mb-24 lg:mb-36 lg:scroll-mt-24">
                                 <ul className="group/list">
                                     <Projects/>
                                 </ul>
@@ -101,6 +102,19 @@ function Home() {
                                 </div>
                             </section>
 
+                            <section id="blog" className="mb-16 scroll-mt-16 md:mb-24 lg:mb-36 lg:scroll-mt-24"
+                                     aria-label="Blog Posts">
+                                <Blogs/>
+                                <div className="mt-12">
+                                    <a className="inline-flex items-center leading-tight font-semibold text-slate-200 group cursor-pointer">
+                                        <span
+                                            className="border-b border-transparent pb-px transition group-hover:border-teal-300 motion-reduce:transition-none">
+                                            View Full Blog Archive
+                                        </span>
+                                        <RightArrowIcon/>
+                                    </a>
+                                </div>
+                            </section>
 
                             <div className="flex justify-center items-start mt-1">
                                 <div className="w-full md:w-10/12">

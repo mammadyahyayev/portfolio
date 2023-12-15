@@ -1,4 +1,4 @@
-import {Experience} from "../data/timelineData.ts";
+import {Experience} from "../data/experiencesData.ts";
 import ExperienceItem from "./ExperienceItem.tsx";
 
 type ExperiencesProps = {

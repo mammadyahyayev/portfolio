@@ -1,4 +1,4 @@
-import {Experience} from "../data/timelineData.ts";
+import {Experience} from "../data/experiencesData.ts";
 import UpArrowIcon from "./UpArrowIcon.tsx";
 
 const ExperienceItem = ({experience}: { experience: Experience }) => {
