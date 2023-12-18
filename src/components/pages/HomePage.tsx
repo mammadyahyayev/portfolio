@@ -5,8 +5,9 @@ import {employmentHistoryData} from "../../data/experiencesData.ts";
 import Contact from "../Contact.tsx";
 import Socials from "../socials/Socials.tsx";
 import InlineTextHighlight from "../InlineTextHighlight.tsx";
-import RightArrowIcon from "../RightArrowIcon.tsx";
+import RightArrowIcon from "../icons/RightArrowIcon.tsx";
 import Blogs from "../Blogs.tsx";
+import {NavLink} from "react-router-dom";
 
 function HomePage() {
     return (
@@ -93,13 +94,15 @@ function HomePage() {
                                     <Projects/>
                                 </ul>
                                 <div className="mt-12">
-                                    <a className="inline-flex items-center leading-tight font-semibold text-slate-200 group cursor-pointer" href="/projects">
+                                    <NavLink
+                                        className="inline-flex items-center leading-tight font-semibold text-slate-200 group cursor-pointer"
+                                        to="/projects" preventScrollReset={true}>
                                         <span
                                             className="border-b border-transparent pb-px transition group-hover:border-teal-300 motion-reduce:transition-none">
                                             View Full Project Archive
                                         </span>
                                         <RightArrowIcon/>
-                                    </a>
+                                    </NavLink>
                                 </div>
                             </section>
 
@@ -107,7 +110,8 @@ function HomePage() {
                                      aria-label="Blog Posts">
                                 <Blogs/>
                                 <div className="mt-12">
-                                    <a className="inline-flex items-center leading-tight font-semibold text-slate-200 group cursor-pointer" href="/blog-posts">
+                                    <a className="inline-flex items-center leading-tight font-semibold text-slate-200 group cursor-pointer"
+                                       href="/blog-posts">
                                         <span
                                             className="border-b border-transparent pb-px transition group-hover:border-teal-300 motion-reduce:transition-none">
                                             View Full Blog Archive

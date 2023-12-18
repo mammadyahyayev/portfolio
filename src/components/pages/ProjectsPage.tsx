@@ -1,16 +1,18 @@
 import LeftArrowIcon from "../icons/LeftArrowIcon.tsx";
 import {projectsData} from "../../data/projectsData.ts";
-import UpArrowIcon from "../UpArrowIcon.tsx";
+import UpArrowIcon from "../icons/UpArrowIcon.tsx";
+import {NavLink} from "react-router-dom";
 
 function ProjectsPage() {
     return (
         <div className="max-w-7xl w-11/12 mx-auto">
             <div className="lg:py-24">
-                <a
-                    className="group mb-2 inline-flex items-center font-semibold leading-tight text-teal-300" href="/">
+                <NavLink
+                    className="group mb-2 inline-flex items-center font-semibold leading-tight text-teal-300" to="/"
+                    preventScrollReset={true}>
                     <LeftArrowIcon/>
                     Mammad Yahya
-                </a>
+                </NavLink>
                 <h1 className="text-4xl font-bold tracking-tight text-slate-200 sm:text-5xl">All Projects</h1>
                 <table id="content" className="mt-12 w-full border-collapse text-left">
                     <thead
@@ -25,7 +27,7 @@ function ProjectsPage() {
                     </thead>
                     <tbody>
                     {projectsData.map(project => (
-                        <tr className="border-b border-slate-300/10 last:border-none">
+                        <tr className="border-b border-slate-300/10 last:border-none" key={project.link}>
                             <td className="py-4 pr-4 align-top text-sm">
                                 <div className="translate-y-px">{project.year}</div>
                             </td>
@@ -39,7 +41,7 @@ function ProjectsPage() {
                             <td className="hidden py-4 pr-4 align-top lg:table-cell">
                                 <ul className="flex -translate-y-1.5 flex-wrap">
                                     {project.technologies.map(technology => (
-                                        <li className="my-1 mr-1.5">
+                                        <li className="my-1 mr-1.5" key={technology}>
                                             <div
                                                 className="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300 ">{technology}
                                             </div>

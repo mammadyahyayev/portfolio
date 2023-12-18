@@ -1,5 +1,5 @@
 import {BlogPost} from "../data/blogsData.ts";
-import UpArrowIcon from "./UpArrowIcon.tsx";
+import UpArrowIcon from "./icons/UpArrowIcon.tsx";
 
 const BlogPost = ({post}: { post: BlogPost }) => {
     return (
