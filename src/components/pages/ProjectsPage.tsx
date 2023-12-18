@@ -33,7 +33,15 @@ function ProjectsPage() {
                             </td>
                             <td className="py-4 pr-4 align-top font-semibold leading-snug text-slate-200">
                                 <div>
-                                    <div className="block sm:hidden"><span>{project.name}</span>
+                                    <div className="block sm:hidden">
+                                        <a
+                                            className="inline-flex items-baseline font-medium leading-tight text-slate-200 hover:text-teal-300 focus-visible:text-teal-300 text-sm group/link"
+                                            href={project.link} target="_blank" rel="noreferrer noopener"
+                                            aria-label={project.link + " (opens in a new tab)"}>
+                                                <span>
+                                                    <span>{project.name} <UpArrowIcon/> </span>
+                                                </span>
+                                        </a>
                                     </div>
                                     <div className="hidden sm:block">{project.name}</div>
                                 </div>
