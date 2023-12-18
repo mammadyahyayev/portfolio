@@ -1,7 +1,7 @@
 import BlogPost from "./BlogPost.tsx";
 import {blogPostsData} from "../data/blogsData.ts";
 
-const Blogs = () => {
+const BlogPosts = () => {
     return (
         <ul className="group/list">
             {blogPostsData.slice(0, 3).map(post => (
@@ -11,4 +11,4 @@ const Blogs = () => {
     );
 };
 
-export default Blogs;
+export default BlogPosts;

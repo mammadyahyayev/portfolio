@@ -10,6 +10,7 @@ const Projects = () => {
             imageSrc={project.imageSrc}
             technologies={project.technologies}
             link={project.link}
+            year={project.year}
         />
     ))
 };

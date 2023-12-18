@@ -6,7 +6,7 @@ import Contact from "../Contact.tsx";
 import Socials from "../socials/Socials.tsx";
 import InlineTextHighlight from "../InlineTextHighlight.tsx";
 import RightArrowIcon from "../icons/RightArrowIcon.tsx";
-import Blogs from "../Blogs.tsx";
+import BlogPosts from "../BlogPosts.tsx";
 import {NavLink} from "react-router-dom";
 
 function HomePage() {
@@ -108,7 +108,7 @@ function HomePage() {
 
                             <section id="blog" className="mb-16 scroll-mt-16 md:mb-24 lg:mb-36 lg:scroll-mt-24"
                                      aria-label="Blog Posts">
-                                <Blogs/>
+                                <BlogPosts/>
                                 <div className="mt-12">
                                     <a className="inline-flex items-center leading-tight font-semibold text-slate-200 group cursor-pointer"
                                        href="/blog-posts">
