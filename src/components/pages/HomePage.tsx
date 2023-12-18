@@ -1,14 +1,14 @@
-import NavBar from "./navbar/NavBar.tsx";
-import Projects from "./Projects.tsx";
-import Experiences from "./Experiences.tsx";
-import {employmentHistoryData} from "../data/experiencesData.ts";
-import Contact from "./Contact.tsx";
-import Socials from "./socials/Socials.tsx";
-import InlineTextHighlight from "./InlineTextHighlight.tsx";
-import RightArrowIcon from "./RightArrowIcon.tsx";
-import Blogs from "./Blogs.tsx";
+import NavBar from "../navbar/NavBar.tsx";
+import Projects from "../Projects.tsx";
+import Experiences from "../Experiences.tsx";
+import {employmentHistoryData} from "../../data/experiencesData.ts";
+import Contact from "../Contact.tsx";
+import Socials from "../socials/Socials.tsx";
+import InlineTextHighlight from "../InlineTextHighlight.tsx";
+import RightArrowIcon from "../RightArrowIcon.tsx";
+import Blogs from "../Blogs.tsx";
 
-function Home() {
+function HomePage() {
     return (
         <>
             <div className="max-w-7xl w-11/12 mx-auto">
@@ -93,7 +93,7 @@ function Home() {
                                     <Projects/>
                                 </ul>
                                 <div className="mt-12">
-                                    <a className="inline-flex items-center leading-tight font-semibold text-slate-200 group cursor-pointer">
+                                    <a className="inline-flex items-center leading-tight font-semibold text-slate-200 group cursor-pointer" href="/projects">
                                         <span
                                             className="border-b border-transparent pb-px transition group-hover:border-teal-300 motion-reduce:transition-none">
                                             View Full Project Archive
@@ -107,7 +107,7 @@ function Home() {
                                      aria-label="Blog Posts">
                                 <Blogs/>
                                 <div className="mt-12">
-                                    <a className="inline-flex items-center leading-tight font-semibold text-slate-200 group cursor-pointer">
+                                    <a className="inline-flex items-center leading-tight font-semibold text-slate-200 group cursor-pointer" href="/blog-posts">
                                         <span
                                             className="border-b border-transparent pb-px transition group-hover:border-teal-300 motion-reduce:transition-none">
                                             View Full Blog Archive
@@ -130,4 +130,4 @@ function Home() {
     )
 }
 
-export default Home
+export default HomePage

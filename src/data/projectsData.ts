@@ -1,6 +1,7 @@
 export type ProjectItem = {
     name: string;
     description: string;
+    year: string;
     technologies: string[];
     imageSrc: string;
     link: string;
@@ -9,7 +10,8 @@ export type ProjectItem = {
 export const projectsData: ProjectItem[] = [
     {
         name: 'AZScrape',
-        technologies: ['Java', 'Selenium'],
+        technologies: ['Java 17', 'Selenium'],
+        year: "2022",
         description: "The application simplify scraping process from different websites by using built-in templates. Don't need to write scraping for every website, provide necessary configurations and let the application scrapes for you.",
         link: 'https://github.com/mammadyahyayev/azscrape',
         imageSrc: "/src/assets/azscrape.png"
@@ -17,27 +19,31 @@ export const projectsData: ProjectItem[] = [
     {
         name: 'Keyword Finder',
         technologies: ['Shell Scripting'],
+        year: "2022",
         description: "Keyword Finder is a tool which helps to search keywords among .pdf, .docx without opening them and prints the files that include searched keywords",
         link: 'https://github.com/mammadyahyayev/keyword-finder',
         imageSrc: "/src/assets/keyword_finder.png"
     },
     {
         name: 'Client Tracking',
-        technologies: ['Java', 'Spring Boot', 'Redis'],
+        technologies: ['Java 11', 'Spring Boot', 'Redis'],
+        year: "2021",
         description: "The application will block clients if they exceeds preset request limits, and will not be able to send request until API owner approval.",
         link: 'https://github.com/mammadyahyayev/client-tracking',
         imageSrc: "/src/assets/client_tracking.png"
     },
     {
         name: 'Cafe Booking',
-        technologies: ['Java', 'Java Swing', 'MySQL'],
+        technologies: ['Java 8', 'Java Swing', 'MySQL'],
+        year: "2020",
         description: "",
         link: 'https://github.com/mammadyahyayev/cafe-desktop-app',
         imageSrc: ""
     },
     {
         name: 'Library Management',
-        technologies: ['Java', 'Java Swing', 'MySQL'],
+        technologies: ['Java 8', 'Java Swing', 'MySQL'],
+        year: "2019",
         description: "",
         link: 'https://github.com/mammadyahyayev/library-desktop-app',
         imageSrc: ""
