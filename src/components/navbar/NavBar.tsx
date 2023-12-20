@@ -10,10 +10,10 @@ const sections: Section[] = [
     {title: "Experience", slug: "experience"},
     {title: "Projects", slug: "projects"},
     {title: "Blog", slug: "blog"},
+    {title: "Skills", slug: "skills"},
     {title: "Contact me", slug: "contact"},
 ]
 export default function NavBar() {
-
     return (
         <nav className="nav hidden lg:block">
             <ul className="mt-16 w-max">

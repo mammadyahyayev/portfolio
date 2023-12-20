@@ -8,6 +8,8 @@ import InlineTextHighlight from "../InlineTextHighlight.tsx";
 import RightArrowIcon from "../icons/RightArrowIcon.tsx";
 import BlogPosts from "../BlogPosts.tsx";
 import {NavLink} from "react-router-dom";
+import {skillData} from "../../data/skillData.ts";
+import SectionHeader from "../SectionHeader.tsx";
 
 function HomePage() {
     return (
@@ -69,7 +71,8 @@ function HomePage() {
                                 </p>
                             </section>
 
-                            <section id="experience" className="mb-16 scroll-mt-16 md:mb-24 lg:mb-36 lg:scroll-mt-24">
+                            <SectionHeader>Experiences</SectionHeader>
+                            <section id="experience" className="mb-16 mt-6 scroll-mt-16 md:mb-24 lg:mb-36 lg:scroll-mt-24">
                                 <ol className="group/list">
                                     <Experiences experiences={employmentHistoryData}/>
                                 </ol>
@@ -88,7 +91,8 @@ function HomePage() {
                                 </div>
                             </section>
 
-                            <section id="projects" className="mb-16 scroll-mt-16 md:mb-24 lg:mb-36 lg:scroll-mt-24"
+                            <SectionHeader>Projects</SectionHeader>
+                            <section id="projects" className="mb-16 mt-6 scroll-mt-16 md:mb-24 lg:mb-36 lg:scroll-mt-24"
                                      aria-label="Projects">
                                 <ul className="group/list">
                                     <Projects/>
@@ -106,7 +110,8 @@ function HomePage() {
                                 </div>
                             </section>
 
-                            <section id="blog" className="mb-16 scroll-mt-16 md:mb-24 lg:mb-36 lg:scroll-mt-24"
+                            <SectionHeader>Blog Posts</SectionHeader>
+                            <section id="blog" className="mb-16 mt-6 scroll-mt-16 md:mb-24 lg:mb-36 lg:scroll-mt-24"
                                      aria-label="Blog Posts">
                                 <BlogPosts/>
                                 <div className="mt-12">
@@ -121,7 +126,33 @@ function HomePage() {
                                 </div>
                             </section>
 
-                            <section id="contact" className="mb-16 scroll-mt-16 md:mb-24 lg:mb-36 lg:scroll-mt-24"
+                            <SectionHeader>Skills</SectionHeader>
+                            <section id="skills" className="mb-16 mt-6 scroll-mt-16 md:mb-24 lg:mb-36 lg:scroll-mt-24"
+                                     aria-label="Skills">
+                                <ul className="mt-2 flex flex-wrap">
+                                    {skillData.slice(0, 6).map(skill =>
+                                        <li className="mr-1.5 mt-2" key={skill.name}>
+                                            <div
+                                                className="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300 ">
+                                                {skill.name}
+                                            </div>
+                                        </li>
+                                    )}
+                                </ul>
+                                <div className="mt-12">
+                                    <a className="inline-flex items-center leading-tight font-semibold text-slate-200 group cursor-pointer"
+                                       href="/skills">
+                                        <span
+                                            className="border-b border-transparent pb-px transition group-hover:border-teal-300 motion-reduce:transition-none">
+                                            View All Skills
+                                        </span>
+                                        <RightArrowIcon/>
+                                    </a>
+                                </div>
+                            </section>
+
+                            <SectionHeader>Contact me</SectionHeader>
+                            <section id="contact" className="mb-16 mt-6 scroll-mt-16 md:mb-24 lg:mb-36 lg:scroll-mt-24"
                                      aria-label="Contact Me">
                                 <Contact/>
                             </section>
