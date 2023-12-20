@@ -16,7 +16,6 @@ const MouseCursorHighlighter = () => {
 
     const handleMouseMove = (e: React.MouseEvent<HTMLDivElement, MouseEvent>) => {
         setCursorPosition({x: e.pageX, y: e.pageY});
-        console.log(cursorPosition.x, cursorPosition.y)
     };
     const divStyle = {
         background: `radial-gradient(600px at ${cursorPosition.x}px ${cursorPosition.y}px, rgba(29, 78, 216, 0.15), transparent 80%)`,
