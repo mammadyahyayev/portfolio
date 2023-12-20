@@ -5,7 +5,7 @@ import {NavLink} from "react-router-dom";
 
 function ProjectsPage() {
     return (
-        <div className="max-w-7xl w-11/12 mx-auto">
+        <div className="max-w-7xl w-11/12 mx-auto min-h-screen">
             <div className="lg:py-24">
                 <NavLink
                     className="group mb-2 inline-flex items-center font-semibold leading-tight text-teal-300" to="/"

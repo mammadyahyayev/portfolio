@@ -15,7 +15,7 @@ const SkillsPage = () => {
                 </NavLink>
                 {Array.from(skillDataByCategory.entries()).map(([category, skills]) => (
                     <div className="mt-10" key={category}>
-                        <SectionHeader>{category}</SectionHeader>
+                        <SectionHeader>{category} SKILLS</SectionHeader>
                         <ul className="mt-2 flex flex-wrap">
                             {skills.map(skill => (
                                 <li className="mr-1.5 mt-2" key={skill}>
