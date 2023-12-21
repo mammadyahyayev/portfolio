@@ -115,14 +115,14 @@ function HomePage() {
                                      aria-label="Blog Posts">
                                 <BlogPosts/>
                                 <div className="mt-12">
-                                    <a className="inline-flex items-center leading-tight font-semibold text-slate-200 group cursor-pointer"
-                                       href="/blog-posts">
+                                    <NavLink className="inline-flex items-center leading-tight font-semibold text-slate-200 group cursor-pointer"
+                                       to="/blog-posts" preventScrollReset={true}>
                                         <span
                                             className="border-b border-transparent pb-px transition group-hover:border-teal-300 motion-reduce:transition-none">
                                             View Full Blog Archive
                                         </span>
                                         <RightArrowIcon/>
-                                    </a>
+                                    </NavLink>
                                 </div>
                             </section>
 
@@ -140,14 +140,14 @@ function HomePage() {
                                     )}
                                 </ul>
                                 <div className="mt-12">
-                                    <a className="inline-flex items-center leading-tight font-semibold text-slate-200 group cursor-pointer"
-                                       href="/skills">
+                                    <NavLink className="inline-flex items-center leading-tight font-semibold text-slate-200 group cursor-pointer"
+                                       to="/skills" preventScrollReset={true}>
                                         <span
                                             className="border-b border-transparent pb-px transition group-hover:border-teal-300 motion-reduce:transition-none">
                                             View All Skills
                                         </span>
                                         <RightArrowIcon/>
-                                    </a>
+                                    </NavLink>
                                 </div>
                             </section>
 
