@@ -12,7 +12,7 @@ const BlogPost = ({post}: { post: BlogPost }) => {
                      decoding="async" data-nimg="1" src={post.imageSrc}
                      className="z-10 col-span-2 rounded border-2 border-slate-200/10 transition group-hover:border-slate-200/30 sm:col-span-2"/>
                 <div className="z-10 col-span-6">
-                    <p className="-mt-1 text-sm font-semibold leading-6">{post.date}</p>
+                    <p className="-mt-1 text-sm font-semibold leading-6">{post.dateStr}</p>
                     <h3 className="-mt-1">
                         <a className="inline-flex items-baseline font-medium leading-tight text-slate-200 hover:text-teal-300 focus-visible:text-teal-300  group/link text-base"
                            href={post.link}

@@ -27,10 +27,10 @@ const BlogPostsPage = () => {
                         </tr>
                         </thead>
                         <tbody>
-                        {blogPostsData.map(post => (
+                        {blogPostsData.sort((a, b) => b.date.getTime() - a.date.getTime()).map(post => (
                             <tr className="border-b border-slate-300/10 last:border-none" key={post.link}>
                                 <td className="py-4 pr-4 align-top text-sm">
-                                    <div className="translate-y-px">{post.date}</div>
+                                    <div className="translate-y-px">{post.dateStr}</div>
                                 </td>
                                 <td className="py-4 pr-4 align-top font-semibold leading-snug text-slate-200">
                                     <div>
