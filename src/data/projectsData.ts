@@ -14,7 +14,7 @@ export const projectsData: ProjectItem[] = [
         year: "2022",
         description: "The application simplify scraping process from different websites by using built-in templates. Don't need to write scraping for every website, provide necessary configurations and let the application scrapes for you.",
         link: 'https://github.com/mammadyahyayev/azscrape',
-        imageSrc: "/src/assets/azscrape.png"
+        imageSrc: "/azscrape.png"
     },
     {
         name: 'Keyword Finder',
@@ -22,7 +22,7 @@ export const projectsData: ProjectItem[] = [
         year: "2022",
         description: "Keyword Finder is a tool which helps to search keywords among .pdf, .docx without opening them and prints the files that include searched keywords",
         link: 'https://github.com/mammadyahyayev/keyword-finder',
-        imageSrc: "/src/assets/keyword_finder.png"
+        imageSrc: "/keyword_finder.png"
     },
     {
         name: 'Client Tracking',
@@ -30,7 +30,7 @@ export const projectsData: ProjectItem[] = [
         year: "2021",
         description: "The application will block clients if they exceeds preset request limits, and will not be able to send request until API owner approval.",
         link: 'https://github.com/mammadyahyayev/client-tracking',
-        imageSrc: "/src/assets/client_tracking.png"
+        imageSrc: "/client_tracking.png"
     },
     {
         name: 'Cafe Booking',
