@@ -10,7 +10,7 @@ function App() {
     return (
         <BrowserRouter>
             <div className="relative">
-                <MouseCursorHighlighter />
+                <MouseCursorHighlighter/>
                 <Routes>
                     <Route path="/" element={<HomePage/>}/>
                     <Route path="/projects" element={<ProjectsPage/>}/>

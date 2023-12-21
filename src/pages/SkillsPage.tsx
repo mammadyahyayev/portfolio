@@ -1,18 +1,12 @@
-import {NavLink} from "react-router-dom";
-import LeftArrowIcon from "../components/icons/LeftArrowIcon.tsx";
 import {skillDataByCategory} from "../data/skillData.ts";
 import SectionHeader from "../components/SectionHeader.tsx";
+import GoBackInHistory from "../components/GoBackInHistory.tsx";
 
 const SkillsPage = () => {
     return (
         <div className="max-w-7xl w-11/12 mx-auto min-h-screen">
             <div className="lg:py-24">
-                <NavLink
-                    className="group mb-2 inline-flex items-center font-semibold leading-tight text-teal-300" to="/"
-                    preventScrollReset={true}>
-                    <LeftArrowIcon/>
-                    Mammad Yahya
-                </NavLink>
+                <GoBackInHistory />
                 {Array.from(skillDataByCategory.entries()).map(([category, skills]) => (
                     <div className="mt-10" key={category}>
                         <SectionHeader>{category} SKILLS</SectionHeader>

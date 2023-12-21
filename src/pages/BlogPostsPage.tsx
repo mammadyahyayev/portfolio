@@ -1,19 +1,26 @@
-import {NavLink} from "react-router-dom";
-import LeftArrowIcon from "../components/icons/LeftArrowIcon.tsx";
 import UpArrowIcon from "../components/icons/UpArrowIcon.tsx";
 import {blogPostsData} from "../data/blogsData.ts";
+import GoBackInHistory from "../components/GoBackInHistory.tsx";
+import {useLocation} from "react-router-dom";
+import {useEffect} from "react";
 
 const BlogPostsPage = () => {
+
+    const location = useLocation()
+    useEffect(() => {
+        document.documentElement.style.scrollBehavior = 'auto';
+
+        setTimeout(() => {
+            window.scrollTo(0, 0);
+            document.documentElement.style.scrollBehavior = 'smooth';
+        }, 0)
+    }, [location]);
+
     return (
         <>
-            <div className="max-w-7xl w-11/12 mx-auto min-h-screen">
+            <div className="max-w-7xl w-11/12 mx-auto">
                 <div className="lg:py-24">
-                    <NavLink
-                        className="group mb-2 inline-flex items-center font-semibold leading-tight text-teal-300" to="/"
-                        preventScrollReset={true}>
-                        <LeftArrowIcon/>
-                        Mammad Yahya
-                    </NavLink>
+                    <GoBackInHistory />
                     <h1 className="text-4xl font-bold tracking-tight text-slate-200 sm:text-5xl">All Blog Posts</h1>
                     <table id="content" className="mt-12 w-full border-collapse text-left">
                         <thead

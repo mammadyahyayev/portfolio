@@ -10,11 +10,21 @@ import BlogPosts from "../components/BlogPosts.tsx";
 import {NavLink} from "react-router-dom";
 import {skillData} from "../data/skillData.ts";
 import SectionHeader from "../components/SectionHeader.tsx";
+import {useEffect} from "react";
 
 function HomePage() {
+
+    useEffect(() => {
+        document.documentElement.style.scrollBehavior = 'auto';
+
+        setTimeout(() => {
+            document.documentElement.style.scrollBehavior = 'smooth';
+        }, 0)
+    }, []);
+
     return (
         <>
-            <div className="max-w-7xl w-11/12 mx-auto">
+            <div className="max-w-7xl w-11/12 mx-auto scroll-mt-16 ">
                 <div
                     className="mx-auto min-h-screen max-w-screen-xl px-6 py-12 font-sans md:px-12 md:py-20 lg:px-24 lg:py-0">
                     <div className="lg:flex lg:justify-between lg:gap-4">
@@ -120,7 +130,7 @@ function HomePage() {
                                 <div className="mt-12">
                                     <NavLink
                                         className="inline-flex items-center leading-tight font-semibold text-slate-200 group cursor-pointer"
-                                        to="/blog-posts" preventScrollReset={true}>
+                                        to="/blog-posts">
                                         <span
                                             className="border-b border-transparent pb-px transition group-hover:border-teal-300 motion-reduce:transition-none">
                                             View Full Blog Archive
