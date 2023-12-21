@@ -72,13 +72,16 @@ function HomePage() {
                             </section>
 
                             <SectionHeader>Experiences</SectionHeader>
-                            <section id="experience" className="mb-16 mt-6 scroll-mt-16 md:mb-24 lg:mb-36 lg:scroll-mt-24">
+                            <section id="experience"
+                                     className="mb-16 mt-6 scroll-mt-16 md:mb-24 lg:mb-36 lg:scroll-mt-24">
                                 <ol className="group/list">
                                     <Experiences experiences={employmentHistoryData}/>
                                 </ol>
-                                <div className="mt-12"><a
-                                    className="inline-flex items-center font-medium leading-tight text-slate-200 group"
-                                    aria-label="View Full Résumé" href="/resume.pdf">
+                                <div className="mt-12">
+                                    <a target="_blank"
+                                       href="https://drive.google.com/file/d/1uAT7UDmo0zvf6hdiviriAF8SDj4cjpJK/view?usp=sharing"
+                                       className="inline-flex items-center font-medium leading-tight text-slate-200 group"
+                                       aria-label="View Full Résumé">
                                     <span>
                                         <span
                                             className="border-b border-transparent pb-px transition group-hover:border-teal-300 motion-reduce:transition-none">View Full </span><span
@@ -87,7 +90,7 @@ function HomePage() {
                                             <RightArrowIcon/>
                                     </span>
                                 </span>
-                                </a>
+                                    </a>
                                 </div>
                             </section>
 
@@ -115,8 +118,9 @@ function HomePage() {
                                      aria-label="Blog Posts">
                                 <BlogPosts/>
                                 <div className="mt-12">
-                                    <NavLink className="inline-flex items-center leading-tight font-semibold text-slate-200 group cursor-pointer"
-                                       to="/blog-posts" preventScrollReset={true}>
+                                    <NavLink
+                                        className="inline-flex items-center leading-tight font-semibold text-slate-200 group cursor-pointer"
+                                        to="/blog-posts" preventScrollReset={true}>
                                         <span
                                             className="border-b border-transparent pb-px transition group-hover:border-teal-300 motion-reduce:transition-none">
                                             View Full Blog Archive
@@ -140,8 +144,9 @@ function HomePage() {
                                     )}
                                 </ul>
                                 <div className="mt-12">
-                                    <NavLink className="inline-flex items-center leading-tight font-semibold text-slate-200 group cursor-pointer"
-                                       to="/skills" preventScrollReset={true}>
+                                    <NavLink
+                                        className="inline-flex items-center leading-tight font-semibold text-slate-200 group cursor-pointer"
+                                        to="/skills" preventScrollReset={true}>
                                         <span
                                             className="border-b border-transparent pb-px transition group-hover:border-teal-300 motion-reduce:transition-none">
                                             View All Skills
