@@ -1,7 +1,7 @@
 import {NavLink} from "react-router-dom";
-import LeftArrowIcon from "../icons/LeftArrowIcon.tsx";
-import {skillDataByCategory} from "../../data/skillData.ts";
-import SectionHeader from "../SectionHeader.tsx";
+import LeftArrowIcon from "../components/icons/LeftArrowIcon.tsx";
+import {skillDataByCategory} from "../data/skillData.ts";
+import SectionHeader from "../components/SectionHeader.tsx";
 
 const SkillsPage = () => {
     return (

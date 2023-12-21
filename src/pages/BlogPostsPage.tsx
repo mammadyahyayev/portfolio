@@ -1,7 +1,7 @@
 import {NavLink} from "react-router-dom";
-import LeftArrowIcon from "../icons/LeftArrowIcon.tsx";
-import UpArrowIcon from "../icons/UpArrowIcon.tsx";
-import {blogPostsData} from "../../data/blogsData.ts";
+import LeftArrowIcon from "../components/icons/LeftArrowIcon.tsx";
+import UpArrowIcon from "../components/icons/UpArrowIcon.tsx";
+import {blogPostsData} from "../data/blogsData.ts";
 
 const BlogPostsPage = () => {
     return (

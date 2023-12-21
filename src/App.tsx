@@ -1,10 +1,10 @@
 import './App.css'
-import HomePage from "./components/pages/HomePage.tsx";
+import HomePage from "./pages/HomePage.tsx";
 import {BrowserRouter, Route, Routes} from "react-router-dom";
-import ProjectsPage from "./components/pages/ProjectsPage.tsx";
-import BlogPostsPage from "./components/pages/BlogPostsPage.tsx";
+import ProjectsPage from "./pages/ProjectsPage.tsx";
+import BlogPostsPage from "./pages/BlogPostsPage.tsx";
 import MouseCursorHighlighter from "./components/MouseCursorHighlighter.tsx";
-import SkillsPage from "./components/pages/SkillsPage.tsx";
+import SkillsPage from "./pages/SkillsPage.tsx";
 
 function App() {
     return (

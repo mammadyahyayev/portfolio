@@ -1,15 +1,15 @@
-import NavBar from "../navbar/NavBar.tsx";
-import Projects from "../Projects.tsx";
-import Experiences from "../Experiences.tsx";
-import {employmentHistoryData} from "../../data/experiencesData.ts";
-import Contact from "../Contact.tsx";
-import Socials from "../socials/Socials.tsx";
-import InlineTextHighlight from "../InlineTextHighlight.tsx";
-import RightArrowIcon from "../icons/RightArrowIcon.tsx";
-import BlogPosts from "../BlogPosts.tsx";
+import NavBar from "../components/navbar/NavBar.tsx";
+import Projects from "../components/Projects.tsx";
+import Experiences from "../components/Experiences.tsx";
+import {employmentHistoryData} from "../data/experiencesData.ts";
+import Contact from "../components/Contact.tsx";
+import Socials from "../components/socials/Socials.tsx";
+import InlineTextHighlight from "../components/InlineTextHighlight.tsx";
+import RightArrowIcon from "../components/icons/RightArrowIcon.tsx";
+import BlogPosts from "../components/BlogPosts.tsx";
 import {NavLink} from "react-router-dom";
-import {skillData} from "../../data/skillData.ts";
-import SectionHeader from "../SectionHeader.tsx";
+import {skillData} from "../data/skillData.ts";
+import SectionHeader from "../components/SectionHeader.tsx";
 
 function HomePage() {
     return (

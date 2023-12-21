@@ -1,6 +1,6 @@
-import LeftArrowIcon from "../icons/LeftArrowIcon.tsx";
-import {projectsData} from "../../data/projectsData.ts";
-import UpArrowIcon from "../icons/UpArrowIcon.tsx";
+import LeftArrowIcon from "../components/icons/LeftArrowIcon.tsx";
+import {projectsData} from "../data/projectsData.ts";
+import UpArrowIcon from "../components/icons/UpArrowIcon.tsx";
 import {NavLink} from "react-router-dom";
 
 function ProjectsPage() {

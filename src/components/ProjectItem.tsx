@@ -15,7 +15,7 @@ function ProjectItem({name, description, technologies, imageSrc, link}: ProjectI
                         <a
                             className="inline-flex items-baseline font-medium leading-tight text-slate-200 hover:text-teal-300 focus-visible:text-teal-300  group/link text-base"
                             href={link} target="_blank" rel="noreferrer noopener"
-                            aria-label="Build a Spotify Connected App (opens in a new tab)">
+                            aria-label={name}>
                             <span
                                 className="absolute -inset-x-4 -inset-y-2.5 hidden rounded md:-inset-x-6 md:-inset-y-4 lg:block"></span>
                             <span>{name}</span> <UpArrowIcon/>
@@ -35,7 +35,7 @@ function ProjectItem({name, description, technologies, imageSrc, link}: ProjectI
                         ))}
                     </ul>
                 </div>
-                <img alt="Build a Spotify Connected App Newline course marketing card" loading="lazy" width="200"
+                <img alt={name} loading="lazy" width="200"
                      height="48" decoding="async" data-nimg="1" src={imageSrc}
                      className="rounded border-2 border-slate-200/10 transition group-hover:border-slate-200/30 sm:order-1 sm:col-span-2 sm:translate-y-1"
                 />
