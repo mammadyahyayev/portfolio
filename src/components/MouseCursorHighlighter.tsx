@@ -4,12 +4,16 @@ const MouseCursorHighlighter = () => {
     const [cursorPosition, setCursorPosition] = useState({x: 0, y: 0});
 
     useEffect(() => {
-        window.addEventListener('mousemove', handleMouseMove);
+        window.addEventListener('mousemove', (e) => {
+            setCursorPosition({x: e.pageX, y: e.pageY})
+        });
 
         return () => {
             window.removeEventListener(
                 'mousemove',
-                handleMouseMove
+                (e) => {
+                    setCursorPosition({x: e.pageX, y: e.pageY})
+                }
             );
         };
     }, [cursorPosition])
