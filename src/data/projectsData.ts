@@ -33,6 +33,14 @@ export const projectsData: ProjectItem[] = [
         imageSrc: "/client_tracking.png"
     },
     {
+        name: 'Sudoku',
+        technologies: ['HTML', 'CSS', 'TypeScript'],
+        year: "2023",
+        description: "The Sudoku game with different levels.",
+        link: 'https://github.com/mammadyahyayev/games/tree/master/sudoku',
+        imageSrc: ""
+    },
+    {
         name: 'Cafe Booking',
         technologies: ['Java 8', 'Java Swing', 'MySQL'],
         year: "2020",
