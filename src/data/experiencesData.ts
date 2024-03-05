@@ -20,11 +20,7 @@ export const employmentHistoryData: EmploymentHistory[] = [
         company: "AISTGroup",
         link: "https://aist.group/",
         duration: "1 months",
-        description: "Develop and maintain desktop based applications.\n" +
-            "Decreased deployment time by 95% through implementation of easy-to-understand scripting\n" +
-            "Upgrade and maintain existing systems to ensure that they meet evolving business needs.\n" +
-            "Write and implement efficient code to ensure that code is scalable, maintainable, and secure.\n" +
-            "Continuously improve software development processes by identifying areas for improvement.",
+        description: "",
         tags: ['Java', 'Spring Framework', 'RabbitMQ']
     },
     {
@@ -35,10 +31,10 @@ export const employmentHistoryData: EmploymentHistory[] = [
         link: "https://smartscoring.com/",
         duration: "2 years",
         description: "Develop and maintain desktop based applications.\n" +
-            "Decreased deployment time by 95% through implementation of easy-to-understand scripting\n" +
-            "Upgrade and maintain existing systems to ensure that they meet evolving business needs.\n" +
-            "Write and implement efficient code to ensure that code is scalable, maintainable, and secure.\n" +
-            "Continuously improve software development processes by identifying areas for improvement.",
+        "Decreased deployment time by 95% through implementation of easy-to-understand scripting\n" +
+        "Upgrade and maintain existing systems to ensure that they meet evolving business needs.\n" +
+        "Write and implement efficient code to ensure that code is scalable, maintainable, and secure.\n" +
+        "Continuously improve software development processes by identifying areas for improvement.",
         tags: ['C#', '.NET', 'WPF', 'Java', 'gRPC', 'TypeScript', 'Angular']
     },
     {
