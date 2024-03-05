@@ -14,12 +14,26 @@ type EmploymentHistory = Experience;
 
 export const employmentHistoryData: EmploymentHistory[] = [
     {
+        id: 'aistgroup',
+        date: "March 2024 - Present",
+        role: "Software Engineer",
+        company: "AISTGroup",
+        link: "https://aist.group/",
+        duration: "1 months",
+        description: "Develop and maintain desktop based applications.\n" +
+            "Decreased deployment time by 95% through implementation of easy-to-understand scripting\n" +
+            "Upgrade and maintain existing systems to ensure that they meet evolving business needs.\n" +
+            "Write and implement efficient code to ensure that code is scalable, maintainable, and secure.\n" +
+            "Continuously improve software development processes by identifying areas for improvement.",
+        tags: ['Java', 'Spring Framework', 'RabbitMQ']
+    },
+    {
         id: 'smartscoring',
-        date: "Apr 2022 - Present",
+        date: "Apr 2022 - March 2024",
         role: "Software Engineer",
         company: "SmartScoring",
         link: "https://smartscoring.com/",
-        duration: "1 year 9 months",
+        duration: "2 years",
         description: "Develop and maintain desktop based applications.\n" +
             "Decreased deployment time by 95% through implementation of easy-to-understand scripting\n" +
             "Upgrade and maintain existing systems to ensure that they meet evolving business needs.\n" +
