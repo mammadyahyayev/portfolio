@@ -4,7 +4,7 @@ export type ProjectItem = {
     year: string;
     technologies: string[];
     imageSrc: string;
-    link?: string;
+    link?: string | undefined;
 }
 
 export const projectsData: ProjectItem[] = [
