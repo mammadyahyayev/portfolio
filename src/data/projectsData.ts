@@ -4,7 +4,7 @@ export type ProjectItem = {
     year: string;
     technologies: string[];
     imageSrc: string;
-    link: string;
+    link?: string;
 }
 
 export const projectsData: ProjectItem[] = [
@@ -13,7 +13,6 @@ export const projectsData: ProjectItem[] = [
         technologies: ['Java 17', 'Selenium'],
         year: "2022",
         description: "The application simplify scraping process from different websites by using built-in templates. Don't need to write scraping for every website, provide necessary configurations and let the application scrapes for you.",
-        link: 'https://github.com/mammadyahyayev/azscrape',
         imageSrc: "/azscrape.png"
     },
     {
@@ -29,7 +28,6 @@ export const projectsData: ProjectItem[] = [
         technologies: ['Java 11', 'Spring Boot', 'Redis'],
         year: "2021",
         description: "The application will block clients if they exceeds preset request limits, and will not be able to send request until API owner approval.",
-        link: 'https://github.com/mammadyahyayev/client-tracking',
         imageSrc: "/client_tracking.png"
     },
     {
