@@ -2,7 +2,7 @@ import azscrape from '@media/azscrape.png';
 import keywordFinder from '@media/keyword_finder.png';
 import clientTracking from '@media/client_tracking.png';
 
-export type ProjectItem = {
+export type Project = {
     name: string;
     description: string;
     year: string;
@@ -12,7 +12,7 @@ export type ProjectItem = {
 }
 
 
-export const projectsData: ProjectItem[] = [
+export const projectsData: Project[] = [
     {
         name: 'AZScrape',
         technologies: ['Java 17', 'Selenium'],

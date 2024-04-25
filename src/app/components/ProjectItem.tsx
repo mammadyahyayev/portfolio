@@ -1,8 +1,8 @@
-import UpArrowIcon from "./icons/UpArrowIcon.tsx";
-import { ProjectItem } from "../data/projectsData.ts";
+import UpArrowIcon from "@icons/UpArrowIcon.tsx";
+import { Project } from "@data/projectsData.ts";
 import Image from "next/image";
 
-function ProjectItem({ name, description, technologies, imageSrc, link }: ProjectItem) {
+function ProjectItem({ name, description, technologies, imageSrc, link }: Project) {
     return (
         <li className="mb-12">
             <div
