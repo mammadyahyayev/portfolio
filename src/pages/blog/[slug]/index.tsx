@@ -1,8 +1,6 @@
 import React from 'react';
 
-type Props = {};
-
-export const BlogPost = (props: Props) => {
+export const BlogPost = () => {
     return <div>BlogPost</div>;
 };
 
