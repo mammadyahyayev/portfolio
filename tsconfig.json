@@ -52,7 +52,16 @@
     ],
     "allowJs": true,
     "incremental": true,
-    "esModuleInterop": true
+    "esModuleInterop": true,
+    "paths": {
+      "@components/*": ["./src/app/components/*"],
+      "@icons/*": ["./src/app/components/icons/*"],
+      "@utils/*": ["./src/app/utils/*"],
+      "@css/*": ["./src/app/styles/css/*"],
+      "@media/*": ["./src/app/styles/media/*"],
+      "@routes/*": ["./src/app/routes/*"],
+      "@data/*": ["./src/app/data/*"],
+    }
   },
   "include": [
     "src",

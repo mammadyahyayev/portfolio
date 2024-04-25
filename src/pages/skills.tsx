@@ -1,6 +1,8 @@
-import {skillDataByCategory} from "../data/skillData.ts";
-import SectionHeader from "../components/SectionHeader.tsx";
-import GoBackInHistory from "../components/GoBackInHistory.tsx";
+import '@css/css-export.css';
+
+import { skillDataByCategory } from "@data/skillData.ts";
+import SectionHeader from "@components/SectionHeader.tsx";
+import GoBackInHistory from "@components/GoBackInHistory.tsx";
 
 const SkillsPage = () => {
     return (

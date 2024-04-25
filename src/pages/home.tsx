@@ -1,16 +1,17 @@
-import NavBar from "../components/navbar/NavBar.tsx";
-import Projects from "../components/Projects.tsx";
-import Experiences from "../components/Experiences.tsx";
-import {employmentHistoryData} from "../data/experiencesData.ts";
-import Contact from "../components/Contact.tsx";
-import Socials from "../components/socials/Socials.tsx";
-import InlineTextHighlight from "../components/InlineTextHighlight.tsx";
-import RightArrowIcon from "../components/icons/RightArrowIcon.tsx";
-import BlogPosts from "../components/BlogPosts.tsx";
-import {NavLink} from "react-router-dom";
-import {skillData} from "../data/skillData.ts";
-import SectionHeader from "../components/SectionHeader.tsx";
-import {useEffect} from "react";
+import '@css/css-export.css';
+
+import NavBar from "@components/navbar/NavBar.tsx";
+import Projects from "@components/Projects.tsx";
+import Experiences from "@components/Experiences.tsx";
+import { employmentHistoryData } from "@data/experiencesData.ts";
+import Contact from "@components/Contact.tsx";
+import Socials from "@components/socials/Socials.tsx";
+import InlineTextHighlight from "@components/InlineTextHighlight.tsx";
+import RightArrowIcon from "@components/icons/RightArrowIcon.tsx";
+import BlogPosts from "@components/BlogPosts.tsx";
+import { skillData } from "@data/skillData.ts";
+import SectionHeader from "@components/SectionHeader.tsx";
+import { useEffect } from "react";
 
 function HomePage() {
 
@@ -41,17 +42,17 @@ function HomePage() {
                                     I love to create and design open source projects for people around the world who
                                     need dire help to their problems.
                                 </p>
-                                <NavBar/>
+                                <NavBar />
                             </div>
 
-                            <Socials/>
+                            <Socials />
                         </header>
                         <main className="pt-24 lg:w-1/2 lg:py-24">
                             <section id="about" className="mb-16 scroll-mt-16 md:mb-24 lg:mb-36 lg:scroll-mt-24"
-                                     aria-label="About me">
+                                aria-label="About me">
                                 <p className="mb-4">
                                     As a software engineer and <InlineTextHighlight> system architecture
-                                    enthusiast</InlineTextHighlight>, I am passionate about
+                                        enthusiast</InlineTextHighlight>, I am passionate about
                                     designing and implementing efficient, scalable, and secure software systems. With a
                                     solid foundation in software engineering principles and experience working with a
                                     variety of programming languages and development frameworks.
@@ -83,66 +84,66 @@ function HomePage() {
 
                             <SectionHeader>Experiences</SectionHeader>
                             <section id="experience"
-                                     className="mb-16 mt-6 scroll-mt-16 md:mb-24 lg:mb-36 lg:scroll-mt-24">
+                                className="mb-16 mt-6 scroll-mt-16 md:mb-24 lg:mb-36 lg:scroll-mt-24">
                                 <ol className="group/list">
-                                    <Experiences experiences={employmentHistoryData}/>
+                                    <Experiences experiences={employmentHistoryData} />
                                 </ol>
                                 <div className="mt-12">
                                     <a target="_blank"
-                                       href="https://drive.google.com/file/d/1uAT7UDmo0zvf6hdiviriAF8SDj4cjpJK/view?usp=sharing"
-                                       className="inline-flex items-center font-medium leading-tight text-slate-200 group"
-                                       aria-label="View Full Résumé">
-                                    <span>
-                                        <span
-                                            className="border-b border-transparent pb-px transition group-hover:border-teal-300 motion-reduce:transition-none">View Full </span><span
-                                        className="whitespace-nowrap"><span
-                                        className="border-b border-transparent pb-px transition group-hover:border-teal-300 motion-reduce:transition-none">Resume</span>
-                                            <RightArrowIcon/>
-                                    </span>
-                                </span>
+                                        href="https://drive.google.com/file/d/1uAT7UDmo0zvf6hdiviriAF8SDj4cjpJK/view?usp=sharing"
+                                        className="inline-flex items-center font-medium leading-tight text-slate-200 group"
+                                        aria-label="View Full Résumé">
+                                        <span>
+                                            <span
+                                                className="border-b border-transparent pb-px transition group-hover:border-teal-300 motion-reduce:transition-none">View Full </span><span
+                                                    className="whitespace-nowrap"><span
+                                                        className="border-b border-transparent pb-px transition group-hover:border-teal-300 motion-reduce:transition-none">Resume</span>
+                                                <RightArrowIcon />
+                                            </span>
+                                        </span>
                                     </a>
                                 </div>
                             </section>
 
                             <SectionHeader>Projects</SectionHeader>
                             <section id="projects" className="mb-16 mt-6 scroll-mt-16 md:mb-24 lg:mb-36 lg:scroll-mt-24"
-                                     aria-label="Projects">
+                                aria-label="Projects">
                                 <ul className="group/list">
-                                    <Projects/>
+                                    <Projects />
                                 </ul>
                                 <div className="mt-12">
-                                    <NavLink
+                                    <a
                                         className="inline-flex items-center leading-tight font-semibold text-slate-200 group cursor-pointer"
-                                        to="/projects" preventScrollReset={true}>
+                                        href="/projects">
                                         <span
                                             className="border-b border-transparent pb-px transition group-hover:border-teal-300 motion-reduce:transition-none">
                                             View Full Project Archive
                                         </span>
-                                        <RightArrowIcon/>
-                                    </NavLink>
+                                        <RightArrowIcon />
+                                    </a>
                                 </div>
                             </section>
 
                             <SectionHeader>Blog Posts</SectionHeader>
                             <section id="blog" className="mb-16 mt-6 scroll-mt-16 md:mb-24 lg:mb-36 lg:scroll-mt-24"
-                                     aria-label="Blog Posts">
-                                <BlogPosts/>
+                                aria-label="Blog Posts">
+                                <BlogPosts />
                                 <div className="mt-12">
-                                    <NavLink
+                                    <a
                                         className="inline-flex items-center leading-tight font-semibold text-slate-200 group cursor-pointer"
-                                        to="/blog-posts">
+                                        href="/blog">
                                         <span
                                             className="border-b border-transparent pb-px transition group-hover:border-teal-300 motion-reduce:transition-none">
                                             View Full Blog Archive
                                         </span>
-                                        <RightArrowIcon/>
-                                    </NavLink>
+                                        <RightArrowIcon />
+                                    </a>
                                 </div>
                             </section>
 
                             <SectionHeader>Skills</SectionHeader>
                             <section id="skills" className="mb-16 mt-6 scroll-mt-16 md:mb-24 lg:mb-36 lg:scroll-mt-24"
-                                     aria-label="Skills">
+                                aria-label="Skills">
                                 <ul className="mt-2 flex flex-wrap">
                                     {skillData.slice(0, 6).map(skill =>
                                         <li className="mr-1.5 mt-2" key={skill.name}>
@@ -154,27 +155,26 @@ function HomePage() {
                                     )}
                                 </ul>
                                 <div className="mt-12">
-                                    <NavLink
+                                    <a
                                         className="inline-flex items-center leading-tight font-semibold text-slate-200 group cursor-pointer"
-                                        to="/skills" preventScrollReset={true}>
+                                        href="/skills">
                                         <span
                                             className="border-b border-transparent pb-px transition group-hover:border-teal-300 motion-reduce:transition-none">
                                             View All Skills
                                         </span>
-                                        <RightArrowIcon/>
-                                    </NavLink>
+                                        <RightArrowIcon />
+                                    </a>
                                 </div>
                             </section>
 
                             <SectionHeader>Contact me</SectionHeader>
                             <section id="contact" className="mb-16 mt-6 scroll-mt-16 md:mb-24 lg:mb-36 lg:scroll-mt-24"
-                                     aria-label="Contact Me">
-                                <Contact/>
+                                aria-label="Contact Me">
+                                <Contact />
                             </section>
                         </main>
                     </div>
                 </div>
-
             </div>
         </>
     )

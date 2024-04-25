@@ -1,5 +1,6 @@
 import UpArrowIcon from "./icons/UpArrowIcon.tsx";
 import { ProjectItem } from "../data/projectsData.ts";
+import Image from "next/image";
 
 function ProjectItem({ name, description, technologies, imageSrc, link }: ProjectItem) {
     return (
@@ -41,7 +42,7 @@ function ProjectItem({ name, description, technologies, imageSrc, link }: Projec
                         ))}
                     </ul>
                 </div>
-                <img alt={name} loading="lazy" width="200"
+                <Image alt={name} loading="lazy" width="200"
                     height="48" decoding="async" data-nimg="1" src={imageSrc}
                     className="rounded border-2 border-slate-200/10 transition group-hover:border-slate-200/30 sm:order-1 sm:col-span-2 sm:translate-y-1"
                 />
