@@ -12,12 +12,23 @@ export interface Experience {
 }
 
 type EmploymentHistory = Experience;
-// type EducationHistory = Experience;
 
 export const employmentHistoryData: EmploymentHistory[] = [
     {
+        id: 'abb',
+        date: "Nov 2024 - Present",
+        role: "Software Engineer",
+        company: "ABB",
+        link: "https://abb-bank.az",
+        duration: "1 month",
+        beginDate: new Date(2024, 2),
+        endDate: new Date(),
+        description: "",
+        tags: ['Java', 'Spring Framework', 'Microservices']
+    },
+    {
         id: 'aistgroup',
-        date: "March 2024 - November 2024",
+        date: "Mar 2024 - Nov 2024",
         role: "Software Engineer",
         company: "AISTGroup",
         link: "https://aist.group/",
@@ -29,7 +40,7 @@ export const employmentHistoryData: EmploymentHistory[] = [
     },
     {
         id: 'smartscoring',
-        date: "Apr 2022 - March 2024",
+        date: "Apr 2022 - Mar 2024",
         role: "Software Engineer",
         company: "SmartScoring",
         link: "https://smartscoring.com/",
