@@ -17,12 +17,13 @@ type EmploymentHistory = Experience;
 export const employmentHistoryData: EmploymentHistory[] = [
     {
         id: 'aistgroup',
-        date: "March 2024 - Present",
+        date: "March 2024 - November 2024",
         role: "Software Engineer",
         company: "AISTGroup",
         link: "https://aist.group/",
-        duration: "1 months",
+        duration: "9 months",
         beginDate: new Date(2024, 2),
+        endDate: new Date(2024, 10),
         description: "",
         tags: ['Java', 'Spring Framework', 'RabbitMQ']
     },
@@ -63,44 +64,24 @@ export const showDurationInStr = (beginDate: Date, endDate: Date): string => {
         throw new Error("beginDate or endDate can't be null!")
     }
 
-    const yearOfBeginDate = beginDate.getFullYear();
-    const monthOfBeginDate = beginDate.getMonth();
+    const beginDateYear = beginDate.getFullYear();
+    const beginDateMonth = beginDate.getMonth();
 
+    const endDateYear = endDate.getFullYear();
+    const endDateMonth = endDate.getMonth();
 
-    const yearOfEndDate = endDate.getFullYear();
-    const monthOfEndDate = endDate.getMonth();
-
-
-    const diffInYears = yearOfEndDate - yearOfBeginDate;
-    const diffInMonths = Math.abs(monthOfEndDate - monthOfBeginDate);
+    const diffInYears = endDateYear - beginDateYear;
+    const diffInMonths = Math.abs(endDateMonth - beginDateMonth);
 
     let result = '';
 
     if (diffInYears > 0) {
-        result += diffInYears == 1 ? "1 year" : diffInYears + " years";
+        result += diffInYears + (diffInYears > 1 ? " years" : " year");
     }
 
     if (diffInMonths > 0) {
-        result += diffInMonths == 1 ? "1 month" : diffInMonths + " months";
+        result += diffInMonths + (diffInMonths > 1 ? " months" : " month");
     }
-
 
     return result;
 }
-
-
-//
-// export const educationHistoryData: EducationHistory[] = [
-//     {
-//         date: "Sep 2022 - Jul 2024",
-//         title: "Azerbaijan State University of Oil and Industry",
-//         duration: "2 years",
-//         description: "Master, Artificial Intelligence"
-//     },
-//     {
-//         date: "Sep 2018 - Jul 2022",
-//         title: "Azerbaijan State University of Oil and Industry",
-//         duration: "4 years",
-//         description: "Bachelor, Information Technology"
-//     }
-// ]
