@@ -295,4 +295,113 @@ export const blogPostsData: BlogPost[] = [
         linkLabel: "readyforfuture.substack.com",
         date: new Date(2023, 7, 21)
     },
+
+    {
+        id: 'one-line-of-code-that-cost-me-an-hour-to-fix',
+        dateStr: "Jul 8, 2024",
+        title: "One Line of Code that Cost Me An HOUR to Fix",
+        link: "https://mammadyahya.medium.com/one-line-of-code-that-cost-me-an-hour-to-fix-fe6f18585740",
+        imageSrc: "https://miro.medium.com/v2/resize:fit:828/format:webp/0*XAri6OFZ-GGGryJo.jpg",
+        tags: ['java', 'time', 'programming', 'software development'],
+        linkLabel: "mammadyahya.medium.com",
+        date: new Date(2024, 6, 8)
+    },
+
+
+    {
+        id: 'challenges-for-spring-boot-migration-journey-from-2-to-3',
+        dateStr: "Aug 12, 2024",
+        title: "Challenges for Spring Boot Migration Journey from 2 to 3",
+        link: "https://mammadyahya.medium.com/challenges-for-spring-boot-migration-journey-from-2-to-3-ae9f616bb462",
+        imageSrc: "https://miro.medium.com/v2/resize:fit:828/format:webp/0*SHmmUwzkRjsBCTxv",
+        tags: ['spring boot', 'migration', 'java'],
+        linkLabel: "mammadyahya.medium.com",
+        date: new Date(2024, 7, 12)
+    },
+
+
+    {
+        id: 'terminal-user-you-must-try-this-tool',
+        dateStr: "Aug 18, 2024",
+        title: "If You are a Terminal User, You MUST try this tool!",
+        link: "https://towardsdev.com/if-you-are-a-terminal-user-you-must-try-this-tool-788c49d9d19e",
+        imageSrc: "https://miro.medium.com/v2/resize:fit:828/format:webp/1*0N3W7DQQFTeAFjgcSE8ABA.png",
+        tags: ['terminal', 'productivity', 'zoxide'],
+        linkLabel: "towardsdev.com",
+        date: new Date(2024, 7, 18)
+    },
+
+
+    {
+        id: 'amazing-intellij-idea-features',
+        dateStr: "Aug 25, 2024",
+        title: "10+ Amazing IntelliJ IDEA Features You Never Knew Existed",
+        link: "https://mammadyahya.medium.com/8-amazing-intellij-idea-features-you-never-knew-existed-919a6a0a8978",
+        imageSrc: "https://miro.medium.com/v2/resize:fit:828/format:webp/0*_EwwAeGdPUr08A8N",
+        tags: ['java', 'intellij', 'clean code', 'productivity'],
+        linkLabel: "mammadyahya.medium.com",
+        date: new Date(2024, 7, 25)
+    },
+
+
+    {
+        id: 'best-way-to-handle-localization',
+        dateStr: "Sep 4, 2024",
+        title: "Best Way to Handle Localization For Exception Messages in Spring Boot",
+        link: "https://mammadyahya.medium.com/best-way-to-handle-localization-for-exception-messages-in-spring-boot-f709f67e9c91",
+        imageSrc: "https://miro.medium.com/v2/resize:fit:828/format:webp/0*igrGhnZJKwW28vr4.png",
+        tags: ['java', 'spring boot', 'best practices'],
+        linkLabel: "mammadyahya.medium.com",
+        date: new Date(2024, 8, 4)
+    },
+
+
+    {
+        id: 'cli-shortcuts',
+        dateStr: "Sep 21, 2024",
+        title: "You Gonna LOVE these CLI Shortcuts for GIT, Linux, Docker, Kubernetes",
+        link: "https://mammadyahya.medium.com/the-must-have-aliases-for-cli-users-020c38713c92",
+        imageSrc: "https://miro.medium.com/v2/resize:fit:828/format:webp/1*h3I49qZ8sdHHuErcTVdUag.png",
+        tags: ['cli', 'linux', 'git', 'docker', 'kubernetes'],
+        linkLabel: "mammadyahya.medium.com",
+        date: new Date(2024, 8, 21)
+    },
+
+    
+    {
+        id: 'docker-advance-part1',
+        dateStr: "Oct 18, 2024",
+        title: "Docker Advance Part 1: Manage and Monitor Docker Containers Health",
+        link: "https://mammadyahya.medium.com/docker-advance-part-1-monitor-docker-containers-with-health-checks-f661238003da",
+        imageSrc: "https://miro.medium.com/v2/resize:fit:828/format:webp/1*oY3lFq3YPC3p4-G0PA5bbg.png",
+        tags: ['docker', 'docker compose', 'health'],
+        linkLabel: "mammadyahya.medium.com",
+        date: new Date(2024, 9, 18)
+    },
+
+
+    {
+        id: 'replace-duplicated-request-parameters',
+        dateStr: "Oct 28, 2024",
+        title: "Best Way to Replace Duplicated Request Parameters in Spring Boot",
+        link: "https://mammadyahya.medium.com/best-way-to-replace-duplicated-request-parameters-in-spring-boot-20b0f9df5c3b",
+        imageSrc: "https://miro.medium.com/v2/resize:fit:828/format:webp/0*J_t503w1G5thNzBu.png",
+        tags: ['spring boot', 'spring', 'clean code', 'java'],
+        linkLabel: "mammadyahya.medium.com",
+        date: new Date(2024, 9, 28)
+    },
+
+
+    {
+        id: 'docker-advance-part2',
+        dateStr: "Nov 13, 2024",
+        title: "Docker Advance Part 2: Docker Logging",
+        link: "https://mammadyahya.medium.com/docker-advance-part-1-monitor-docker-containers-with-health-checks-f661238003da",
+        imageSrc: "https://miro.medium.com/v2/resize:fit:828/format:webp/1*mehJpX176-p01bYTl6PPNw.png",
+        tags: ['docker', 'docker compose', 'fluentd', 'logging'],
+        linkLabel: "mammadyahya.medium.com",
+        date: new Date(2024, 10, 13)
+    },
+
 ]
+
