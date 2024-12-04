@@ -1,8 +1,8 @@
-import '@css/css-export.css';
+// import '@css/css-export.css';
 
-import { projectsData } from "@data/projectsData.ts";
-import UpArrowIcon from "@components/icons/UpArrowIcon.tsx";
-import GoBackInHistory from "@components/GoBackInHistory.tsx";
+import { projectsData } from "../app/data/projectsData.ts";
+import UpArrowIcon from "../app/components/icons/UpArrowIcon.tsx";
+import GoBackInHistory from "../app/components/GoBackInHistory.tsx";
 
 function ProjectsPage() {
     return (
@@ -22,49 +22,51 @@ function ProjectsPage() {
                         </tr>
                     </thead>
                     <tbody>
-                        {projectsData.map(project => (
-                            <tr className="border-b border-slate-300/10 last:border-none" key={project.link}>
-                                <td className="py-4 pr-4 align-top text-sm">
-                                    <div className="translate-y-px">{project.year}</div>
-                                </td>
-                                <td className="py-4 pr-4 align-top font-semibold leading-snug text-slate-200">
-                                    <div>
-                                        <div className="block sm:hidden">
-                                            <a
-                                                className="inline-flex items-baseline font-medium leading-tight text-slate-200 hover:text-teal-300 focus-visible:text-teal-300 text-sm group/link"
+                        {projectsData
+                            .sort((project1, project2) => parseInt(project2.year) - parseInt(project1.year))
+                            .map(project => (
+                                <tr className="border-b border-slate-300/10 last:border-none" key={project.link}>
+                                    <td className="py-4 pr-4 align-top text-sm">
+                                        <div className="translate-y-px">{project.year}</div>
+                                    </td>
+                                    <td className="py-4 pr-4 align-top font-semibold leading-snug text-slate-200">
+                                        <div>
+                                            <div className="block sm:hidden">
+                                                <a
+                                                    className="inline-flex items-baseline font-medium leading-tight text-slate-200 hover:text-teal-300 focus-visible:text-teal-300 text-sm group/link"
+                                                    href={project.link} target="_blank" rel="noreferrer noopener"
+                                                    aria-label={project.link + " (opens in a new tab)"}>
+                                                    <span>
+                                                        <span>{project.name} <UpArrowIcon /> </span>
+                                                    </span>
+                                                </a>
+                                            </div>
+                                            <div className="hidden sm:block">{project.name}</div>
+                                        </div>
+                                    </td>
+                                    <td className="hidden py-4 pr-4 align-top lg:table-cell">
+                                        <ul className="flex -translate-y-1.5 flex-wrap">
+                                            {project.technologies.map(technology => (
+                                                <li className="my-1 mr-1.5" key={technology}>
+                                                    <div
+                                                        className="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300 ">{technology}
+                                                    </div>
+                                                </li>
+                                            ))}
+                                        </ul>
+                                    </td>
+                                    <td className="hidden py-4 align-top sm:table-cell">
+                                        {project.link && (
+                                            <a className="inline-flex items-baseline font-medium leading-tight text-slate-200 hover:text-teal-300 focus-visible:text-teal-300 text-sm group/link"
                                                 href={project.link} target="_blank" rel="noreferrer noopener"
                                                 aria-label={project.link + " (opens in a new tab)"}>
-                                                <span>
-                                                    <span>{project.name} <UpArrowIcon /> </span>
-                                                </span>
+                                                    <span>
+                                                        <span className="inline-block">{project.link}<UpArrowIcon /></span>
+                                                    </span>
                                             </a>
-                                        </div>
-                                        <div className="hidden sm:block">{project.name}</div>
-                                    </div>
-                                </td>
-                                <td className="hidden py-4 pr-4 align-top lg:table-cell">
-                                    <ul className="flex -translate-y-1.5 flex-wrap">
-                                        {project.technologies.map(technology => (
-                                            <li className="my-1 mr-1.5" key={technology}>
-                                                <div
-                                                    className="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300 ">{technology}
-                                                </div>
-                                            </li>
-                                        ))}
-                                    </ul>
-                                </td>
-                                <td className="hidden py-4 align-top sm:table-cell">
-                                    <a
-                                        className="inline-flex items-baseline font-medium leading-tight text-slate-200 hover:text-teal-300 focus-visible:text-teal-300 text-sm group/link"
-                                        href={project.link} target="_blank" rel="noreferrer noopener"
-                                        aria-label={project.link + " (opens in a new tab)"}>
-                                        <span>
-                                            <span className="inline-block">{project.link}<UpArrowIcon />
-                                            </span>
-                                        </span>
-                                    </a>
-                                </td>
-                            </tr>
+                                        )}
+                                    </td>
+                                </tr>
                         ))}
                     </tbody>
                 </table>

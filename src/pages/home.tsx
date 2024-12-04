@@ -1,17 +1,18 @@
-import '@css/css-export.css';
+// import '@css/css-export.css';
 
-import NavBar from "@components/navbar/NavBar.tsx";
-import Projects from "@components/Projects.tsx";
-import Experiences from "@components/Experiences.tsx";
-import { employmentHistoryData } from "@data/experiencesData.ts";
-import Contact from "@components/Contact.tsx";
-import Socials from "@components/socials/Socials.tsx";
-import InlineTextHighlight from "@components/InlineTextHighlight.tsx";
-import RightArrowIcon from "@components/icons/RightArrowIcon.tsx";
-import BlogPosts from "@components/BlogPosts.tsx";
-import { skillData } from "@data/skillData.ts";
-import SectionHeader from "@components/SectionHeader.tsx";
+import NavBar from "../app/components/navbar/NavBar.tsx";
+import Projects from "../app/components/Projects.tsx";
+import Experiences from "../app/components/Experiences.tsx";
+import { employmentHistoryData } from "../app/data/experiencesData.ts";
+import Contact from "../app/components/Contact.tsx";
+import Socials from "../app/components/socials/Socials.tsx";
+import InlineTextHighlight from "../app/components/InlineTextHighlight.tsx";
+import RightArrowIcon from "../app/components/icons/RightArrowIcon.tsx";
+import BlogPosts from "../app/components/BlogPosts.tsx";
+import { skillData } from "../app/data/skillData.ts";
+import SectionHeader from "../app/components/SectionHeader.tsx";
 import { useEffect } from "react";
+import { resumeUrl } from '../app/constants';
 
 function HomePage() {
 
@@ -90,7 +91,7 @@ function HomePage() {
                                 </ol>
                                 <div className="mt-12">
                                     <a target="_blank"
-                                        href="https://drive.google.com/file/d/1uAT7UDmo0zvf6hdiviriAF8SDj4cjpJK/view?usp=sharing"
+                                        href={resumeUrl}
                                         className="inline-flex items-center font-medium leading-tight text-slate-200 group"
                                         aria-label="View Full Résumé">
                                         <span>

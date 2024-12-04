@@ -1,6 +1,7 @@
-import azscrape from '@media/azscrape.png';
-import keywordFinder from '@media/keyword_finder.png';
-import clientTracking from '@media/client_tracking.png';
+import azscrape from '../styles/media/azscrape.png';
+import nioHttpServer from '../styles/media/nioHttpServer.png';
+import keywordFinder from '../styles/media/keyword_finder.png';
+import clientTracking from '../styles/media/client_tracking.png';
 
 export type Project = {
     name: string;
@@ -11,14 +12,22 @@ export type Project = {
     link?: string | undefined;
 }
 
-
 export const projectsData: Project[] = [
+    {
+        name: 'Non-blocking HTTP server',
+        technologies: ['Java 17'],
+        year: "2024",
+        description: "Non-blocking HTTP server",
+        imageSrc: nioHttpServer,
+        link: 'https://github.com/mammadyahyayev/nio-http-server',
+    },
     {
         name: 'AZScrape',
         technologies: ['Java 17', 'Selenium'],
         year: "2022",
         description: "The application simplify scraping process from different websites by using built-in templates. Don't need to write scraping for every website, provide necessary configurations and let the application scrapes for you.",
-        imageSrc: azscrape
+        imageSrc: azscrape,
+        link: 'https://github.com/mammadyahyayev/azscrape',
     },
     {
         name: 'Keyword Finder',

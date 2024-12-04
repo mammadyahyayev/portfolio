@@ -4,9 +4,8 @@
     "useDefineForClassFields": true,
     "lib": [
       "ES2020",
-      "dom",
-      "dom.iterable",
-      "esnext"
+      "DOM",
+      "DOM.Iterable"
     ],
     "module": "ESNext",
     "skipLibCheck": true,
@@ -16,7 +15,7 @@
     "resolveJsonModule": true,
     "isolatedModules": true,
     "noEmit": true,
-    "jsx": "preserve",
+    "jsx": "react-jsx",
     /* Linting */
     "strict": true,
     "noUnusedLocals": true,
@@ -45,15 +44,11 @@
     "suppressExcessPropertyErrors": false,
     "suppressImplicitAnyIndexErrors": false,
     "noStrictGenericChecks": false,
-    "plugins": [
-      {
-        "name": "next"
-      }
-    ],
     "allowJs": true,
     "incremental": true,
     "esModuleInterop": true,
     "paths": {
+      "@app/*": ["./src/app/*"],
       "@components/*": ["./src/app/components/*"],
       "@icons/*": ["./src/app/components/icons/*"],
       "@utils/*": ["./src/app/utils/*"],
@@ -65,11 +60,6 @@
   },
   "include": [
     "src",
-    "next-env.d.ts",
-    "**/*.ts",
-    "**/*.tsx",
-    ".next/types/**/*.ts",
-    "./dist/types/**/*.ts"
   ],
   "references": [
     {
