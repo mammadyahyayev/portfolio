@@ -1,10 +1,14 @@
 import UpArrowIcon from "../app/components/icons/UpArrowIcon.tsx";
-import { blogPostsData } from "../app/data/blogsData.ts";
 import GoBackInHistory from "../app/components/GoBackInHistory.tsx";
 import { useLocation } from "react-router-dom";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
+import { IPost } from "../model/post.ts";
+import { getPosts } from "../api/portfolio/portfolio-backend.ts";
 
 const BlogPostsPage = () => {
+
+  const [posts, setPosts] = useState<IPost[]>([])
+
   const location = useLocation();
   useEffect(() => {
     document.documentElement.style.scrollBehavior = "auto";
@@ -14,6 +18,13 @@ const BlogPostsPage = () => {
       document.documentElement.style.scrollBehavior = "smooth";
     }, 0);
   }, [location]);
+
+  useEffect(() => {
+    getPosts().then(posts => {
+      console.log(`${posts.data.length} posts fetched...`)
+      setPosts(posts.data)
+    });
+  }, [])
 
   return (
     <>
@@ -44,15 +55,15 @@ const BlogPostsPage = () => {
               </tr>
             </thead>
             <tbody>
-              {blogPostsData
-                .sort((a, b) => b.date.getTime() - a.date.getTime())
+              {posts
+                .sort((a, b) => b.publishedDate - a.publishedDate)
                 .map((post) => (
                   <tr
                     className="border-b border-slate-300/10 last:border-none"
                     key={post.link}
                   >
                     <td className="py-4 pr-4 align-top text-sm">
-                      <div className="translate-y-px">{post.dateStr}</div>
+                      <div className="translate-y-px">{post.publishedDateFormat}</div>
                     </td>
                     <td className="py-4 pr-4 align-top font-semibold leading-snug text-slate-200">
                       <div>
