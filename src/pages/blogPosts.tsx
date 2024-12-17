@@ -4,6 +4,7 @@ import { useLocation } from "react-router-dom";
 import { useEffect, useState } from "react";
 import { IPost } from "../model/post.ts";
 import { getPosts } from "../api/portfolio/portfolio-backend.ts";
+import { blogPostsData } from "../app/data/blogsData.ts";
 
 const BlogPostsPage = () => {
 
@@ -23,6 +24,9 @@ const BlogPostsPage = () => {
     getPosts().then(posts => {
       console.log(`${posts.data.length} posts fetched...`)
       setPosts(posts.data)
+    }).catch(err => {
+      console.error("Failed to fetch posts", err)
+      setPosts(blogPostsData)
     });
   }, [])
 
