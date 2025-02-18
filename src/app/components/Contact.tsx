@@ -26,7 +26,7 @@ const Contact = () => {
                         className="p-2 mb-4 bg-transparent border-2 rounded-md focus:outline-none"
                     />
                     <button
-                        type="button"
+                        type="submit"
                         className="text-center inline-block px-8 py-3 w-max font-medium rounded-md drop-shadow-md
                         bg-teal-400/50 text-xs text-white hover:stroke-white hover:bg-teal-800"
                     >
